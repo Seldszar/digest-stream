@@ -1,0 +1,47 @@
+{
+  "name": "digest-stream",
+  "version": "0.0.0-development",
+  "description": "Another pass-trough stream which calculates the digest of a stream.",
+  "author": "Alexandre Breteau <contact@seldszar.fr> (https://seldszar.fr)",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/seldszar/digest-streamn#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seldszar/digest-stream.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seldszar/digest-stream/issues"
+  },
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md"
+  ],
+  "engine": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "lint": "eslint --format codeframe lib",
+    "lint-staged": "lint-staged",
+    "precommit": "npm run lint-staged",
+    "security": "nsp check",
+    "semantic-release": "semantic-release",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.7.2",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.2",
+    "lint-staged": "^7.0.0",
+    "nsp": "^3.2.1",
+    "prettier": "^1.11.1",
+    "semantic-release": "^15.0.3"
+  },
+  "lint-staged": {
+    "*.js": "eslint --format codeframe"
+  }
+}
