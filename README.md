@@ -1,5 +1,7 @@
 # digest-stream
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Seldszar/digest-stream.svg)](https://greenkeeper.io/)
+
 Another pass-trough stream which calculates the digest of a stream.
 
 ## Table of Contents
